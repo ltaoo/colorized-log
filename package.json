@@ -1,5 +1,18 @@
 {
+  "name": "colorized-log",
+  "version": "1.0.0",
+  "description": "一个支持自定义浏览器控制台文本样式的库。",
+  "main": "index.js",
   "dependencies": {
+    "@babel/cli": "^7.10.5",
     "@babel/core": "^7.10.5"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "transform": "yarn babel content.js -o bundle.js --plugins ./src/plugin.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
